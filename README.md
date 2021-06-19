@@ -1,7 +1,5 @@
-# Project_2
-My second(?) Project
+# Twiiter Bot
 
-I have decided to try and learn python by making projects. One the most common python program I have seen is the Twitter Bot so I'm gonna make one for myself.
-I'll watch a couple of videos on it and then make one for myself.
+A Twitter Bot that performs actions like sending tweets, following back followers, liking and retweeting mentions, replying to tweeets, etc.
 
-Bhaiya said that I can make a twitter bot that can do sentiment analysis on the tweets and recommend products.
+Built using python and twitter API (accessed using Tweepy library).
