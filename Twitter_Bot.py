@@ -74,7 +74,7 @@ def reply_to_mentions_with_keyword():
 	keyword = input('Enter keyword: ')
 	mentions = api.mentions_timeline(tweet_mode = 'extended')
 	for mention in reversed(mentions):
-		if keyword.lower() in mention.full_text.lower():
+		if keyword.upper() in mention.full_text.upper():
 			print(mention.full_text, flush = True)
 			print('Found ' + keyword, flush = True)
 			reply = input('Reply: ')
