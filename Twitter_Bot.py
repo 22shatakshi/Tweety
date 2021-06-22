@@ -14,7 +14,7 @@ api = tweepy.API(auth)
 def retrieve_lastseen_id(file_name):
 	f_read = open(file_name, 'r')
 	lastseen_id = int(f_read.read().strip())
-	f_read.close()
+    f_read.close()
 	return lastseen_id
 	
 def store_lastseen_id(lastseen_id, file_name):
@@ -74,7 +74,7 @@ def reply_to_mentions_with_keyword():
 	keyword = input('Enter keyword: ')
 	mentions = api.mentions_timeline(tweet_mode = 'extended')
 	for mention in reversed(mentions):
-		if keyword.lower() in mention.full_text.upper():
+		if keyword.lower() in mention.full_text.lower():
 			print(mention.full_text, flush = True)
 			print('Found ' + keyword, flush = True)
 			reply = input('Reply: ')
